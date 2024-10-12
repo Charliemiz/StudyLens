@@ -21,7 +21,10 @@
 - Use HTML / JS (WebGrazer.js)
 
 ### Index.html 
+The main webpage.
 
 ### Style.css
+Handles the UI styling.
 
 ### App.js
+Includes all JavaScript logic, including WebGazer.js tracking.
