@@ -13,8 +13,8 @@
 - **README.md**: Project overview
 
 ## Documentation
-- **/https://webgazer.cs.brown.edu/**
-- The above link is where we learned most of the syntax regarding WebGazer.js)
+- **https://webgazer.cs.brown.edu/**
+- The above link is where we learned most of the syntax regarding WebGazer.js
 
 ## Setup
 1. **Clone the Repository**:
