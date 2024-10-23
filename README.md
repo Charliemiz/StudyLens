@@ -28,3 +28,7 @@ Handles the UI styling.
 
 ### App.js
 Includes all JavaScript logic, including WebGazer.js tracking.
+
+### Documentation
+https://webgazer.cs.brown.edu/
+The above link is where we learned most of the syntax regarding WebGazer.js
