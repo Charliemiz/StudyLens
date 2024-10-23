@@ -14,6 +14,7 @@
 
 ## Documentation
 - **https://webgazer.cs.brown.edu/**
+- **https://github.com/brownhci/WebGazer/wiki**
 - The above link is where we learned most of the syntax regarding WebGazer.js
 
 ## Setup
