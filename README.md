@@ -1,5 +1,9 @@
 # StudyLens
 
+## Run App (have to use http:/)
+- **python3 -m http.server**
+- **Access:** http://localhost:8000/
+
 ## Features
 - **Distraction Detection**: Alerts if the user looks away.
 - **Focus Timer**: Tracks productive time.
