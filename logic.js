@@ -32,7 +32,7 @@ window.onload = function() {
 };
 
 // Settings for the video and data collection
-webgazer.showVideo(true);
+webgazer.showVideo(false);
 
 function drawGaze(x,y) {
     context.clearRect(0,0, canvas.width, canvas.height);

@@ -48,11 +48,21 @@ body {
     cursor: pointer;
 }
 
+#calibrate_button:hover {
+    opacity: 0.8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+}
+
 .icon_container {
     background-color: rgb(196, 227, 255);
     padding: 20px;
     border-radius: 20%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
+}
+
+.icon_container:hover {
+    opacity: 0.8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
 }
 
 .panel_icons {
