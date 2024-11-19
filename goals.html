@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- Include WebGazer.js from CDN -->
     <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
 </head>
+
 <body>
     <div class="sidebar">
         <h2>StudyLens</h2>
@@ -18,14 +20,40 @@
         <a href="reports.html" class="navlink icon_container"><i class="fas fa-chart-line panel_icons"></i> Reports</a>
     </div>
 
-    <div class="main-content">    
-        <div class="top-container">
-            <h1>StudyLens</h1>
-            <p>Welcome to StudyLens, your personalized dashboard to set and track goals.</p>
-        </div>
+    <div class="main-content">
 
-        <div class="content">
-            <h1>Goals Page</h1>
-            <p>This is the Goals page</p>
-        </div></div>
+        <h3 class="goal_title_container">Goals</h3>
+        <h3 class="goal_title2_container">
+            All Goals
+            <button class="add_goal_button">Add ^</button>
+        </h3>
+
+        <div class="goal_table">
+            <div class="goal_headers">
+
+                <div class="goal_header">Goal</div>
+                <div class="goal_header">Date Created</div>
+                <div class="goal_header">Status</div>
+
+            </div>
+
+            <div class="goal_container">
+                <div class="goal_item">
+                    <div class="goal_info">Goal 1</div>
+                    <div class="goal_date">01/01/2024</div>
+                    <div class="goal_status">In Progress</div>
+                </div>
+                <div class="goal_item">
+                    <div class="goal_info">Goal 2</div>
+                    <div class="goal_date">01/01/2024</div>
+                    <div class="goal_status">Complete</div>
+                </div>
+                <div class="goal_item">
+                    <div class="goal_info">Goal 3</div>
+                    <div class="goal_date">01/01/2024</div>
+                    <div class="goal_status">In Progress</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
