@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>StudyLens - Home</title>
     <!-- Include WebGazer.js from CDN -->
@@ -15,18 +15,39 @@
     <div class="sidebar">
         <h2>StudyLens</h2>
         <!-- <span class="fas fa-bars navlink"></span> -->
-        <a href="index.html" class="navlink icon_container"><i class="fas fa-home panel_icons"></i> Home</a>
+        <a href="../index.html" class="navlink icon_container"><i class="fas fa-home panel_icons"></i> Home</a>
         <a href="goals.html" class="navlink icon_container"><i class="fas fa-bullseye panel_icons"></i> Goals</a>
-        <a href="reports.html" class="navlink icon_container"><i class="fas fa-chart-line panel_icons"></i> Reports</a>
+        <a href="../reports/reports.html" class="navlink icon_container"><i class="fas fa-chart-line panel_icons"></i> Reports</a>
     </div>
 
     <div class="main-content">
-
+        
         <h3 class="goal_title_container">Goals</h3>
         <h3 class="goal_title2_container">
             All Goals
-            <button class="add_goal_button">Add ^</button>
+            <button class="add_goal_button" onclick="openNewGoalModal()">New Goal</button>
         </h3>
+
+        <div id="goal_modal" class="goal_modal">
+            <div class="goal_modal_content">
+                <div class="goal_headers"> 
+                    Create A Goal
+                    <span class="close_modal" onclick="closeGoalModal()"> X </span>
+                </div>
+
+                <div class="goal_modal_body">
+                    <input type="text" placeholder="Name" />
+                    <input type="date" />
+                    <textarea placeholder="Description" rows="4"></textarea>
+                </div>
+
+                <div class="goal_modal_footer">
+                    <button onclick="closeModal()">Create</button>
+                </div>
+                
+            </div>
+        </div>
+
 
         <div class="goal_table">
             <div class="goal_headers">
@@ -57,3 +78,4 @@
         </div>
     </div>
 </body>
+<script src="goals.js"></script>

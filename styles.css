@@ -7,6 +7,66 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.goal_modal { 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.goal_modal_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 15% auto;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.goal_modal_body {
+    padding: 15px;
+}
+
+.goal_modal_body input,
+.goal_modal_body textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.goal_modal_footer {
+    text-align: right;
+}
+
+.goal_modal_footer button {
+    background-color: #8787F4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close_modal {
+    color: black;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #Calibration {
     position: absolute;
     width: 100%;
@@ -48,7 +108,7 @@ body {
     padding: 10px 20px;
     background-color: #f0f0f0;
     font-weight: bold;
-    color: #333;
+    color: rgb(84, 84, 190);
     border-bottom: 2px solid #ddd;
 }
 
@@ -64,16 +124,31 @@ body {
 }
 
 .add_goal_button {
-    background-color: #5b86e5;
+    background-color: rgb(84, 84, 190);
     border-radius: 20px;
-    padding: 10px;
-    align-items: center;
-    height: 35px;
+    padding: 0 20px; 
+    text-align: center; 
+    height: 35px; 
+    line-height: 35px;
     font-size: medium;
-    font-weight: bold;
-    margin-top: 5px;
     margin-right: 20px;
+    color: white;
+    margin-top: 5px;
+    display: inline-block; 
+    border-color: black; 
+    border-width: 2px;
+    cursor: pointer; 
 }
+
+.add_goal_button:hover{
+    opacity: 0.8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+}
+
+.goal_modal_header {
+
+}
+
 
 .goal_container {
     display: flex;
