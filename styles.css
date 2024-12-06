@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-#Calibration {
+#productive {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -176,7 +176,7 @@ h3 {
     margin: 0px;
 }
 
-.calibrationPoint {
+.productivePoint {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -186,7 +186,7 @@ h3 {
     cursor: pointer;
 }
 
-#body_calibration {
+#body_productive {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
