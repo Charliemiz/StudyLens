@@ -6,76 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>StudyLens - Home</title>
-    <!-- Include WebGazer.js from CDN -->
-    <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+    <title>StudyLens - Goals</title>
 </head>
 
 <body>
     <div class="sidebar">
         <h2>StudyLens</h2>
-        <!-- <span class="fas fa-bars navlink"></span> -->
         <a href="../index.html" class="navlink icon_container"><i class="fas fa-home panel_icons"></i> Home</a>
         <a href="goals.html" class="navlink icon_container"><i class="fas fa-bullseye panel_icons"></i> Goals</a>
         <a href="../reports/reports.html" class="navlink icon_container"><i class="fas fa-chart-line panel_icons"></i> Reports</a>
     </div>
 
     <div class="main-content">
-        
         <h3 class="goal_title_container">Goals</h3>
         <h3 class="goal_title2_container">
             All Goals
             <button class="add_goal_button" onclick="openNewGoalModal()">New Goal</button>
         </h3>
 
-        <div id="goal_modal" class="goal_modal">
+        <!-- Modal for creating new goals -->
+        <div id="goal_modal" class="goal_modal" style="display: none;">
             <div class="goal_modal_content">
-                <div class="goal_headers"> 
+                <div class="goal_headers">
                     Create A Goal
-                    <span class="close_modal" onclick="closeGoalModal()"> X </span>
+                    <span class="close_modal" onclick="closeGoalModal()">X</span>
                 </div>
 
                 <div class="goal_modal_body">
-                    <input type="text" placeholder="Name" />
-                    <input type="date" />
-                    <textarea placeholder="Description" rows="4"></textarea>
+                    <input type="text" placeholder="Name" id="goal_name" />
+                    <input type="date" id="goal_date" />
+                    <textarea placeholder="Description" rows="4" id="goal_description"></textarea>
                 </div>
 
                 <div class="goal_modal_footer">
-                    <button onclick="closeModal()">Create</button>
+                    <button onclick="createGoal()">Create</button>
                 </div>
-                
             </div>
         </div>
 
-
+        <!-- Goals Table -->
         <div class="goal_table">
             <div class="goal_headers">
-
                 <div class="goal_header">Goal</div>
                 <div class="goal_header">Date Created</div>
                 <div class="goal_header">Status</div>
-
             </div>
 
             <div class="goal_container">
-                <div class="goal_item">
-                    <div class="goal_info">Goal 1</div>
-                    <div class="goal_date">01/01/2024</div>
-                    <div class="goal_status">In Progress</div>
-                </div>
-                <div class="goal_item">
-                    <div class="goal_info">Goal 2</div>
-                    <div class="goal_date">01/01/2024</div>
-                    <div class="goal_status">Complete</div>
-                </div>
-                <div class="goal_item">
-                    <div class="goal_info">Goal 3</div>
-                    <div class="goal_date">01/01/2024</div>
-                    <div class="goal_status">In Progress</div>
-                </div>
+                <!-- Goals will be dynamically generated here -->
             </div>
         </div>
     </div>
 </body>
 <script src="goals.js"></script>
+</html>

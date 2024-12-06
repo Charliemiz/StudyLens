@@ -8,6 +8,7 @@
     <title>StudyLens - Home</title>
     <!-- Include WebGazer.js from CDN -->
     <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -26,8 +27,14 @@
         </div>
 
         <div class="content">
-            <h1>Home Page</h1>
-            <p>This is the Home page</p>
-        </div></div>
+            <div class="goals-section">
+                <h2 class="goals-title">Goals <span class="arrow">→</span></h2>
+                <div class="goals-container" id="goalsContainer">
+                    <!-- Goal cards will be dynamically generated here -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 </body>

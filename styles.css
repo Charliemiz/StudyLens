@@ -308,3 +308,76 @@ h3 {
 a {
     text-decoration: none !important;
 }
+
+/* Goals Section */
+.goals-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #9495ff;
+    border-radius: 10px;
+}
+
+.goals-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: bold;
+}
+
+/* Goals Container */
+.goals-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.goals-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+/* Goal Card */
+.goal-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #e6e6fa; /* Light purple */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+}
+
+.goal-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.goal-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.goal-card a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.goal-card a:hover {
+    text-decoration: underline;
+}
